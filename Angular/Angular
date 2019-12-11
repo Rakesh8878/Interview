@@ -1,0 +1,146 @@
+Question: What is Angular?
+Answer: Angular is a TypeScript-based open-source web application framework, developed and maintained by Google. It offers an easy and powerful way of building front end web-based applications.
+        Angular integrates a range of features like declarative templates, dependency injection, end-to-end tooling, etc. that facilitates web application development.
+
+Question: Please explain the various features of Angular.
+Answer: There are several features of Angular that makes it an ideal front end JavaScript framework. Most important of them are described as follows:
+    Accessibility Applications:-        Angular allows creating accessible applications using ARIA-enabled components, built-in test infrastructure, and developer guides.
+    Angular CLI:-                       Angular provides support for command-line interface tools. These tools can be used for adding components, testing, instant deploying, etc.
+    Animation Support:-                 Angular’s intuitive API allows the creation of high-performance, complex animation timelines with very little code.
+    Cross-Platform App Development:-    Angular can be used for building an efficient and powerful desktop, native, and progressive web apps. Angular provides support for building native mobile applications using Cordova, Ionic, or NativeScript.
+    Code Generation:-                   Angular is able to convert templates into highly-optimized code for modern JavaScript virtual machines.
+    Code Splitting:-                    With the new Component Router, Angular apps load quickly. The Component Router offers automatic code-splitting so that only the code required to render the view that is requested by a user is loaded.
+    Synergy with Popular Code Editors and IDEs:-    Angular offers code completion, instant errors, etc. with popular source code editors and IDEs.
+    Templates:-                         Allows creating UI views with a simple and powerful template syntax.
+    Testing:-                           Angular lets you carry out frequent unit tests using Karma. The Protractor allows running faster scenario tests in a stable way.
+
+Question: What are the building blocks of Angular?
+Answer: There are essentially 9 building blocks of an Angular application. These are:
+    Components:-            A component controls one or more views. Each view is some specific section of the screen. Every Angular application has at least one component, known as the root component. It is bootstrapped inside the main module, known as the root module. A component contains application logic defined inside a class. This class is responsible for interacting with the view via an API of properties and methods.
+    Data Binding:-          The mechanism by which parts of a template coordinates with parts of a component is known as data binding. In order to let Angular know how to connect both sides (template and its component), the binding markup is added to the template HTML.
+    Dependency Injection:-  Angular makes use of DI to provide required dependencies to new components. Typically, dependencies required by a component are services. A component’s constructor parameters tell Angular about the services that a component requires. So, a dependency injection offers a way to supply fully-formed dependencies required by a new instance of a class.
+    Directives:-            The templates used by Angular are dynamic in nature. Directives are responsible for instructing Angular about how to transform the DOM when rendering a template. Actually, components are directives with a template. Other types of directives are attribute and structural directives.
+    Metadata:-              In order to let Angular know how to process a class, metadata is attached to the class. For doing so decorators are used.
+    Modules:-               Also known as NgModules, a module is an organized block of code with a specific set of capabilities. It has a specific application domain or a workflow. Like components, any Angular application has at least one module. This is known as the root module. Typically, an Angular application has several modules.
+    Routing:-               An Angular router is responsible for interpreting a browser URL as an instruction to navigate to a client-generated view. The router is bound to links on a page to tell Angular to navigate the application view when a user clicks on it.
+    Services:-              A very broad category, a service can be anything ranging from a value and function to a feature that is required by an Angular app. Technically, a service is a class with a well-defined purpose.
+    Template:-              Each component’s view is associated with its companion template. A template in Angular is a form of HTML tags that lets Angular know that how it is meant to render the component.
+
+Question: What are the prominent feature of Angular 8?
+Answer: Most prominent features of Angular 8 are -
+    Support TypeScript 3.4
+    Supports Web Workers
+    Preview of Ivy available & Bazzel
+    Lazy loading
+    Improvement of ngUpgrade
+
+Question: Discuss the advantages and disadvantages of using Angular?
+Answer: Following are the various advantages of using Angular:
+    Ability to add a custom directive
+    Exceptional community support
+    Facilitates client and server communication
+    Features strong features, such as Animation and Event Handlers
+    Follows the MVC pattern architecture
+    Offers support for static template and Angular template
+    Support for two-way data-binding
+    Supports dependency injection, RESTful services, and validations
+
+Disadvantages of using Angular are enumerated as follows:
+
+    Complex SPAs can be inconvenient and laggy to use due to their size
+    Dynamic applications do not always perform well
+    Learning Angular requires a decent effort and time
+
+Question: Define the ng-content Directive?
+Answer: You use the <ng-content></ng-content> tag as a placeholder for that dynamic content, then when the template is parsed Angular will replace that placeholder tag with your dynamic content.
+
+Question: Could you explain services in Angular?
+Answer: Singleton objects in Angular that get instantiated only once during the lifetime of an application are called services. An Angular service contains methods that maintain the data throughout the life of an application.
+The primary intent of an Angular service is to organize as well as share business logic, models, or data and functions with various components of an Angular application.
+The functions offered by an Angular service can be invoked from any Angular component, such as a controller or directive.
+
+Question: What is string interpolation in Angular?
+Answer: String interpolation in Angular refers to a special type of syntax that makes use of template expressions in order to display the component data. These template expressions are enclosed within double curly braces i.e. {{ }}.
+The JavaScript expressions that are to be executed by Angular are added within the curly braces and the corresponding output is embedded into the HTML code. Typically, these expressions are updated and registered like watches as a part of the digest cycle.
+
+Question: Explain Angular Authentication and Authorization.
+Answer: The user login credentials are passed to an authenticate API, which is present on the server. Post server-side validation of the credentials, a JWT (JSON Web Token) is returned. The JWT has information or attributes regarding the current user. The user is then identified with the given JWT. This is called authentication.
+
+Post logging-in successfully, different users have a different level of access. While some may access everything, access for others might be restricted to only some resources. The level of access is authorization.
+
+Question: Can you explain the concept of scope hierarchy in Angular?
+Answer: Angular organizes the $scope objects into a hierarchy that is typically used by views. This is known as the scope hierarchy in Angular. It has a root scope that can further contain one or several scopes called child scopes.
+
+In a scope hierarchy, each view has its own $scope. Hence, the variables set by a view’s view controller will remain hidden to other view controllers. Following is a typical representation of a Scope Hierarchy:
+
+Root $scope
+$scope for Controller 1
+$scope for Controller 2
+.....
+.....
+$scope for Controller n
+
+Question: How do Observables differ from Promises?
+Answer: As soon as a promise is made, the execution takes place. However, this is not the case with observables because they are lazy. This means that nothing happens until a subscription is made. While promises handle a single event, observable is a stream that allows passing of more than one event. A callback is made for each event in an observable.
+
+Question: Please explain the difference between Angular and AngularJS?
+Answer: Various differences between Angular and AngularJS are stated as follows:
+    Architecture -                  AngularJS supports the MVC design model. Angular relies on components and directives instead
+    Dependency Injection (DI) -     Angular supports a hierarchical Dependency Injection with unidirectional tree-based change detection. AngularJS doesn’t support DI
+    Expression Syntax -             In AngularJS, a specific ng directive is required for the image or property and an event. Angular, on the other hand, use () and [] for blinding an event and accomplishing property binding, respectively
+    Mobile Support -                AngularJS doesn’t have mobile support while Angular does have
+    Recommended Language -          While JavaScript is the recommended language for AngularJS, TypeScript is the recommended language for Angular
+    Routing -                       For routing, AngularJS uses $routeprovider.when() whereas Angular uses @RouteConfig{(…)}
+    Structure -                     With a simplified structure, Angular makes the development and maintenance of large applications easier. Comparatively, AngularJS has a less manageable structure
+    Support -                       No official support or updates are available for the AngularJS. On the contrary, Angular has active support with updates rolling out every now and then
+
+Question: What are directives in Angular?
+Answer: Directives are one of the core features of Angular. They allow an Angular developer to write new, application-specific HTML syntax. In actual, directives are functions that are executed by the Angular compiler when the same finds them in the DOM.
+Directives are responsible for instructing Angular about how to transform the DOM when rendering a template. Actually, components are directives with a template. 
+
+Question: What are different types of directives in Angular?
+Answer: Different types of directives in Angular is as follows:
+    Components directives:- It is directives with a template.It is mainly used to specify the HTML templates. It is the most commonly-used directive in an Angular project. It is decorated with the @component decorator. This directive is a class. The component directive is used to specify the template/HTML for the Dom Layout.
+    Structural directives:- Change the DOM layout by adding and removing DOM elementsor manipulating elements. Its built-in types are *NgIf,*NgFor,*NgSwitch. Structural directives are easy to recognize by using an asterisk (*).
+    Attribute directives:-  Change the appearance or behavior of an element, component, or another directive. Examples of built-in attribute directives that ship with Angular 2 are ngStyle and ngClass. 
+    Custom directives:-     We can create custom attribute directives and custom structural directives using a @Directive decorator. Using custom attribute directive we can change appearances such as text color, background color and font size of the body of an HTML element that can be called host element. To change appearance angular provides ElementRef class that can directly access DOM.
+
+Question: Could you explain the concept of templates in Angular?
+Answer: A template is an HTML snippet that tells Angular how to render the component in angular application.
+Written with HTML, templates in Angular contains Angular-specific attributes and elements. Combined with information coming from the controller and model, templates are then further rendered to cater the user with the dynamic view.
+There are two ways of defining template in an angular component:
+    Inline Template:-   The inline template is defined by placing the HTML code in back ticks “ and is linked to the component metadata using the template property of @Component decorator.
+    Template File:-     The template is defined in a separate HTML file and is linked to the component metadata using the @Component decorator’s templateUrl property.
+
+Question: Explain the difference between an Annotation and a Decorator in Angular?
+Answer: In Angular, annotations are used for creating an annotation array. They are only metadata set of the class using the Reflect Metadata library.
+Decorators in Angular are design patterns used for separating decoration or modification of some class without changing the original source code.
+
+Annotation are a declarative way to add metadata to code. When metadata added to the class in order to give it a specific meaning.
+Decorators are a proposed standard for ECMAScript 2016 by Yehuda Katz, to annotate and modify classes and properties at design time.
+
+Question: What is module in Angular?
+Answer: In Angular, a module is a mechanism to group components, directives, pipes and services that are related, in such a way that can be combined with other modules to create an application.
+
+Question: What is component in Angular?
+Answer: Components are the most basic building block of an UI in an Angular application. An Angular application is a tree of Angular components. Angular components are a subset of directives. Unlike directives, components always have a template and only one component can be instantiated per an element in a template.
+Components are defined using the @component decorator. A component has a selector, template, style and other properties, using which it specifies the metadata required to process the component.
+A component controls a patch of screen called a view. 
+
+Question: What is NgModules?
+Answer:  NgModules are containers for a cohesive block of code dedicated to an application domain, a workflow, or a closely related set of capabilities. They can contain components, service providers, and other code files whose scope is defined by the containing NgModule.
+An NgModule is defined by a class decorated with @NgModule(). The @NgModule() decorator is a function that takes a single metadata object, whose properties describe the module. The most important properties are as follows.
+    declarations:-      The components, directives, and pipes that belong to this NgModule.
+    exports:-           The subset of declarations that should be visible and usable in the component templates of other NgModules.
+    imports:-           Other modules whose exported classes are needed by component templates declared in this NgModule.
+    providers:-         Creators of services that this NgModule contributes to the global collection of services; they become accessible in all parts of the app. (You can also specify providers at the component level, which is often preferred.)
+    bootstrap:-         The main application view, called the root component, which hosts all other app views. Only the root NgModule should set the bootstrap property.
+
+Question: Please explain the differences between Angular and jQuery?
+Answer: The single biggest difference between Angular and jQuery is that while the former is a JS frontend framework, the latter is a JS library.
+Nonetheless, notable differences between Angular and jQuery are:
+    Angular has two-way data binding, jQuery does not
+    Angular provides support for RESTful API while jQuery doesn’t
+    jQuery doesn’t offer deep linking routing though Angular supports it
+    There is no form validation in jQuery whereas it is present in Angular
+
